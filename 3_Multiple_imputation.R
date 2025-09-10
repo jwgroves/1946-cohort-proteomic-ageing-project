@@ -1,5 +1,5 @@
 # ============================================================
-# 5_Multiple_imputation.R
+# 3_Multiple_imputation.R
 # Multiple imputation of missing data
 # Author: James Groves
 # Date: 2025-08-30
