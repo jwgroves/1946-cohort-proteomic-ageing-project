@@ -1,5 +1,5 @@
 # ============================================================
-# 6_Aim_1_Generate_Results.R
+# 4_Aim_1_Generate_Results.R
 # Aim 1 analysis: Proteomic organ age distributions
 # Author: James Groves
 # Date: 2025-08-30
@@ -205,6 +205,7 @@ writeData(sc, "Ext Data Fig 2b",
 sums3_df, startRow=25, startCol=1)
 
 saveWorkbook(sc,"SC_Aim_1.xlsx", overwrite=TRUE)
+
 
 
 
