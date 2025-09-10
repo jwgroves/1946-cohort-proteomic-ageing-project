@@ -1,5 +1,5 @@
 # ============================================================
-# 9_Aim_4_Generate_Results.R
+# 7_Aim_4_Generate_Results.R
 # Aim 4 analysis: Plasma proteins connected to exposures & longevity
 # Author: James Groves
 # Date: 2025-08-30
@@ -153,7 +153,7 @@ for (i in seq_along(proteins)) {
   
   cat(i, ":", protein,"\n")
   
-  formula <- as.formula(paste0(protein, " ~ protectivefactors + Sex_F"))
+  formula <- as.formula(paste0(protein, " ~ protectivefactors + Sex_F + Age60"))
 
   fit <- lapply(imp_p, function(d) lm(formula, data=d))
   
@@ -444,4 +444,5 @@ for (f in files) {
 saveWorkbook(
 comb, 
 "S:/LHA_JG0923/Proteomic Ageing Project/Final Scripts & Data/Source_Data.xlsx", overwrite = TRUE)
+
 
