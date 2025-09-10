@@ -155,7 +155,7 @@ setequal(prot_merged$ID, ids_age_sex$ID)
 
 # Remove excluded participants
 
-mort <- read.csv("S:/LHA_JG0923/NHS_Digital/Mortality/mortality_derived_130824-DSH_sharing.csv")
+mort <- read.csv(file.path(inp, "mortality_derived_130824-DSH_sharing.csv"))
 
 mort <- mort %>% 
   rename(
